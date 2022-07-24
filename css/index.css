@@ -35,6 +35,10 @@ html{
     z-index: 1;
 }
 
+.background-video-desktop{
+    display: none;
+}
+
 header{
     position: absolute;
     display: flex;
@@ -238,18 +242,6 @@ header{
         bottom: 0px;
         background: linear-gradient(0deg, #1a1a1a, #00000000);
     }
-
-    #hdvid{
-        display: block;
-        position: fixed;
-        width: 100vw;
-        height: 100vh;
-        z-index: 1;
-    }
-
-    #phonevid{
-        display: none;
-    }
 }
 
 @media only screen and (min-width: 820px) {
@@ -287,16 +279,15 @@ header{
         line-height: 60px;
     }
 
-    #hdvid{
-        display: block;
-        position: fixed;
-        width: 100vw;
-        height: 100vh;
-        z-index: 1;
+    .background-video{
+        display: none;
     }
 
-    #phonevid{
-        display: none;
+    .background-video-desktop{
+        display: block;
+        position: fixed;
+        z-index: 1;
+        width: 100vw;
     }
 
 }
