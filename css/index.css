@@ -8,6 +8,10 @@
     --logo-width-px: 52px;
 }
 
+#hdvid{
+    display: none;
+}
+
 *{
     margin: 0px;
     padding: 0px;
@@ -235,6 +239,12 @@ header{
         background: linear-gradient(0deg, #1a1a1a, #00000000);
     }
 
+    #hdvid{
+        display: block;
+        position: fixed;
+        width: 100vw;
+        z-index: 1;
+    }
 }
 
 @media only screen and (min-width: 820px) {
