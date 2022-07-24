@@ -47,3 +47,10 @@ btn.addEventListener('click', () => {
         btn.style.opacity = 0;
     }, 400);
 })
+
+
+window.addEventListener('click', () => {
+    const vid = document.querySelector('.loading-screen');
+
+    vid.play();
+})
