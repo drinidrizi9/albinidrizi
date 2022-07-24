@@ -299,7 +299,7 @@ header{
 
     .background-video-desktop{
         display: flex;
-        position: absolute;
+        /* position: absolute; */
         height: 100vh;
     }
 
