@@ -24,7 +24,8 @@ html{
     user-select: none;
     -moz-user-select: none;
     -webkit-user-select: none;
-    overflow-x: hidden;
+    overflow: hidden;
+    
 }
 
 .background-video{
@@ -199,7 +200,7 @@ header{
 }
 
 .loading-screen{
-    display: none;
+    display: flex;
     justify-content: center;
     align-items: center;
     position: fixed;
@@ -240,21 +241,6 @@ header{
     .gradient-bottom{
         bottom: 0px;
         background: linear-gradient(0deg, #1a1a1a, #00000000);
-    }
-
-    .loading-screen{
-        display: none;
-        justify-content: center;
-        align-items: center;
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100vw;
-        height: 100vh;
-        background-color: #1a1a1a;
-        z-index: 999;
-        opacity: 1;
-        transition: 0.5s ease-in-out;
     }
 }
 
@@ -299,23 +285,8 @@ header{
 
     .background-video-desktop{
         display: flex;
-        /* position: absolute; */
+        position: absolute;
         height: 100vh;
-    }
-
-    .loading-screen{
-        display: none;
-        justify-content: center;
-        align-items: center;
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100vw;
-        height: 100vh;
-        background-color: #1a1a1a;
-        z-index: 999;
-        opacity: 1;
-        transition: 0.5s ease-in-out;
     }
 
 }
