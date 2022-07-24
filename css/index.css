@@ -243,7 +243,12 @@ header{
         display: block;
         position: fixed;
         width: 100vw;
+        height: 100vh;
         z-index: 1;
+    }
+
+    #phonevid{
+        display: none;
     }
 }
 
@@ -280,6 +285,18 @@ header{
     }
     .text1{
         line-height: 60px;
+    }
+
+    #hdvid{
+        display: block;
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        z-index: 1;
+    }
+
+    #phonevid{
+        display: none;
     }
 
 }
