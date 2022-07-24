@@ -284,10 +284,8 @@ header{
     }
 
     .background-video-desktop{
-        display: block;
-        position: fixed;
-        resize: both;
-        width: unset;
+        display: flex;
+        position: absolute;
         height: 100vh;
     }
 
