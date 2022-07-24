@@ -25,6 +25,7 @@ html{
     -moz-user-select: none;
     -webkit-user-select: none;
     overflow-x: hidden;
+    scrollbar-arrow-color: red;
 }
 
 .background-video{
