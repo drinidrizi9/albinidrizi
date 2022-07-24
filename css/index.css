@@ -24,8 +24,7 @@ html{
     user-select: none;
     -moz-user-select: none;
     -webkit-user-select: none;
-    overflow: hidden;
-    
+    overflow-x: hidden;
 }
 
 .background-video{
