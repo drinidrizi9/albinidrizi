@@ -50,7 +50,7 @@ btn.addEventListener('click', () => {
 
 
 window.addEventListener('click', () => {
-    const vid = document.querySelector('.loading-screen');
+    const vid = document.querySelector('.background-video');
 
     vid.play();
 })
