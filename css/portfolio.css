@@ -1,0 +1,143 @@
+/* #58CC15 color code */
+/* logo width: 52px */
+/* header color #1a1a1a 85% opacity*/
+/* body color #1a1a1a 65% opacity */
+
+:root{
+    --primary-color: #58CC15;
+    --logo-width-px: 52px;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    color: #fff;
+    text-decoration: none;
+    font-family: "Montserrat";
+}
+
+html{
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    overflow: hidden;
+    
+}
+
+.background-video{
+    display: block;
+    position: fixed;
+    width: 100vw;
+    z-index: 1;
+}
+
+header{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    z-index: 100;
+    width: 100vw;
+    height: 105px;
+    background-color: #1a1a1a;
+    opacity: 85%;
+    border-bottom: rgba(255, 255, 255, 0.5) 1px solid;
+}
+
+.header-container{
+    width: 80vw;
+    height: 105px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: red; */
+}
+
+.logo{
+    width: 52px;
+    display: flex;
+    user-select: none;
+    transform: translateY(-100px);
+    transition: 1s ease-in-out;
+}
+
+.links{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+}
+
+.home{
+    font-size: 15px;
+    text-decoration: none;
+    font-weight: 200;
+    transition: 0.3s ease-in-out;
+}
+
+.about, .portfolio{
+    font-size: 15px;
+    margin-left: 15px;
+    text-decoration: none;
+    font-weight: 200;
+    transition: 0.3s ease-in-out;
+}
+.current{
+    font-size: 15px;
+    color: var(--primary-color);
+    font-weight: bold;
+    transition: 0.3s ease-in-out;
+}
+
+.about:hover, .portfolio:hover{
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.bodypart{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 90;
+    margin-top: 105px;
+    width: 100vw;
+    height: calc(100vh - 105px);
+}
+
+.opacity-background-2{
+    background-color: rgba(26, 26, 26, 0.65);
+    /* opacity: 65%; */
+    width: 100vw;
+    height: calc(100vh - 105px);
+    position: absolute;
+    display: flex;
+    z-index: 10;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.gradient-bottom{
+    z-index: 20;
+    display: flex;
+    position: absolute;
+    width: 100vw;
+    height: 600px;
+    background: linear-gradient(0deg, #1a1a1a, #00000000);
+    bottom: 0;
+}
+
+.loading-screen{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #1a1a1a;
+    z-index: 999;
+    opacity: 1;
+    transition: 0.5s ease-in-out;
+}

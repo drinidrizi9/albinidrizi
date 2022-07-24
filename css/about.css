@@ -1,0 +1,235 @@
+:root{
+    --primary-color: #58CC15;
+    --secondary-color: #9c9c9c;
+    --logo-width-px: 52px;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    color: #fff;
+    text-decoration: none;
+    font-family: "Montserrat";
+}
+
+html{
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    overflow: hidden;
+    
+}
+
+.background-video{
+    display: block;
+    position: fixed;
+    width: 100vw;
+    z-index: 1;
+}
+
+header{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    z-index: 100;
+    width: 100vw;
+    height: 105px;
+    background-color: #1a1a1a;
+    opacity: 85%;
+    border-bottom: rgba(255, 255, 255, 0.5) 1px solid;
+}
+
+.header-container{
+    width: 80vw;
+    height: 105px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: red; */
+}
+
+.logo{
+    width: 52px;
+    display: flex;
+    user-select: none;
+    transform: translateY(-100px);
+    transition: 1s ease-in-out;
+}
+
+.links{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+}
+
+.about{
+    font-size: 3.5vw;
+    text-decoration: none;
+    font-weight: 200;
+    transition: 0.3s ease-in-out;
+    margin-left: 15px;
+}
+
+.home, .portfolio{
+    font-size: 3.5vw;
+    margin-left: 15px;
+    text-decoration: none;
+    font-weight: 200;
+    transition: 0.3s ease-in-out;
+}
+.current{
+    font-size: 3.5vw;
+    color: var(--primary-color);
+    font-weight: bold;
+    transition: 0.3s ease-in-out;
+}
+
+.home:hover, .portfolio:hover{
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.loading-screen{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #fff;
+    z-index: 999;
+    opacity: 1;
+    transition: 0.5s ease-in-out;
+}
+.bodypart{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    position: absolute;
+    z-index: 90;
+    margin-top: 105px;
+    width: 100vw;
+    height: calc(100vh - 105px);
+}
+
+.opacity-background-2{
+    background-color: rgba(26, 26, 26, 0.8);
+    /* opacity: 65%; */
+    width: 100vw;
+    height: calc(100vh - 105px);
+    position: absolute;
+    display: flex;
+    z-index: 10;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.gradient-bottom{
+    z-index: 20;
+    display: flex;
+    position: absolute;
+    width: 100vw;
+    height: 600px;
+    background: linear-gradient(0deg, #1a1a1a, #00000000);
+    bottom: 0;
+}
+
+
+.first-paragraph, .second-paragraph, .third-paragraph{
+    transform: translateX(-100vw);
+    z-index: 100;
+    transition: 1s;
+}
+
+.header-line{
+    color: var(--primary-color);
+    position: relative;
+    z-index: 500;
+    opacity: 1;
+    transition: 0.5s;
+}
+
+.paragraph-line{
+    color: #fff;
+    position: relative;
+    z-index: 500;
+    opacity: 1;
+    transition: 0.5s;
+}
+
+.span{
+    color: var(--secondary-color);
+}
+
+.container{
+    width: 80vw;
+    height: 60vh;
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+
+@media only screen and (min-width: 768px) {
+
+    header{
+        height: 120px;
+    }
+
+    .logo{
+        width: 72px;
+    }
+
+    .gradient-bottom{
+        bottom: 0px;
+        background: linear-gradient(0deg, #1a1a1a, #00000000);
+    }
+    
+    .container{
+        width: 80vw;
+        height: 60vh;
+        display: flex;
+        margin-top: 20px;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;
+    }
+
+}
+
+@media only screen and (min-width: 820px) {
+
+    header{
+        height: 120px;
+    }
+    .header-container{
+        height: 120px;
+    }
+
+    .home, .about, .portfolio{
+        font-size: 25px;
+    }
+
+    .about, .portfolio{
+        margin-left: 30px;
+    }
+    .logo{
+        width: 72px;
+    }
+
+    .container{
+        width: 80vw;
+        height: 60vh;
+        display: flex;
+        margin-top: 20px;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+}
