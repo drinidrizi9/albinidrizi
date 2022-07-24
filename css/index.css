@@ -286,6 +286,7 @@ header{
     .background-video-desktop{
         display: block;
         position: fixed;
+        resize: both;
         width: 100vw;
         height: 100vh;
     }
