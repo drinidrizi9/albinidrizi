@@ -24,19 +24,28 @@ html{
     user-select: none;
     -moz-user-select: none;
     -webkit-user-select: none;
-    overflow: hidden;
-    
+    overflow-x: hidden;
 }
 
+::-webkit-scrollbar{
+    background-color: red;
+    width: 10px;
+    display: block;
+    z-index: 9999;
+}
+/* 
 .background-video{
     display: block;
     position: fixed;
     width: 100vw;
     z-index: 1;
-}
+} */
 
 .background-video-desktop{
-    display: none;
+    display: flex;
+    position: fixed;
+    z-index: 1;
+    height: 100vh;
 }
 
 header{
@@ -135,8 +144,8 @@ header{
     bottom: 0;
 }
 
-.bottom-part{
-    margin-bottom: 80px;
+.second-part{
+    margin-bottom: 130px;
     display: flex;
     width: 80vw;
     height: 500px;
@@ -155,7 +164,7 @@ header{
     border-radius: 20px;
     border: none;
     font-size: 5vw;
-    margin-top: 50px;
+    margin-top: 80px;
     transform: translateY(150px);
     opacity: 0;
     transition: 1s ease-in-out;
@@ -212,81 +221,4 @@ header{
     z-index: 999;
     opacity: 1;
     transition: 0.5s ease-in-out;
-}
-
-@media only screen and (min-width: 768px) {
-
-    header{
-        height: 120px;
-    }
-
-    .logo{
-        width: 72px;
-    }
-
-    .first{
-        font-size: 12vw;
-    }
-    .second{
-        font-size: 9.1vw;
-    }
-    .third{
-        font-size: 4.2vw;
-    }
-
-    #btn1{
-        font-size: 3vw;
-    }
-    
-    .gradient-bottom{
-        bottom: 0px;
-        background: linear-gradient(0deg, #1a1a1a, #00000000);
-    }
-}
-
-@media only screen and (min-width: 820px) {
-
-    header{
-        height: 120px;
-    }
-    .header-container{
-        height: 120px;
-    }
-
-    .home, .about, .portfolio{
-        font-size: 25px;
-    }
-
-    .about, .portfolio{
-        margin-left: 30px;
-    }
-    .logo{
-        width: 72px;
-    }
-    .first{
-        font-size: 110px;
-    }
-    .second{
-        font-size: 85px;
-    }
-    .third{
-        font-size: 37px;
-    }
-    #btn1{
-        font-size: 25px;
-    }
-    .text1{
-        line-height: 60px;
-    }
-
-    .background-video{
-        display: none;
-    }
-
-    .background-video-desktop{
-        display: flex;
-        position: absolute;
-        height: 100vh;
-    }
-
 }

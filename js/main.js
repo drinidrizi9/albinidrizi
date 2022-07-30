@@ -8,9 +8,9 @@ let logo = document.querySelector('.logo');
 
 window.addEventListener('load', () => {
     setTimeout(() => {
+        title.innerText = 'Albin Idrizi'
         loading.style.opacity = 0;
     }, 5100);
-    title.innerText = 'Albin Idrizi'
     setTimeout(() => {
         loading.style.display = 'none'
     }, 5500);
