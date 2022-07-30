@@ -16,10 +16,10 @@
     font-family: "Montserrat";
 }
 
-html{
+/* html{
     /* user-select: none; */
     /* -moz-user-select: none; */
-}
+/* }  */
 
 ::-webkit-scrollbar{
     background-color: red   ;
