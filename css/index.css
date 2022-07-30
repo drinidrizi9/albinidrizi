@@ -8,10 +8,6 @@
     --logo-width-px: 52px;
 }
 
-#hdvid{
-    display: none;
-}
-
 *{
     margin: 0px;
     padding: 0px;
@@ -21,18 +17,21 @@
 }
 
 html{
-    user-select: none;
-    -moz-user-select: none;
-    -webkit-user-select: none;
-    overflow-x: hidden;
+    /* user-select: none; */
+    /* -moz-user-select: none; */
 }
 
 ::-webkit-scrollbar{
-    background-color: red;
-    width: 10px;
-    display: block;
+    background-color: red   ;
+    width: 15px;
+    display: flex;
     z-index: 9999;
 }
+
+::-webkit-scrollbar-thumb{
+    background-color: #383838;
+}
+
 /* 
 .background-video{
     display: block;
@@ -43,7 +42,8 @@ html{
 
 .background-video-desktop{
     display: flex;
-    position: fixed;
+    position: absolute;
+    transform: translateX(-10%);
     z-index: 1;
     height: 100vh;
 }
