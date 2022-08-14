@@ -1,4 +1,5 @@
 const btn = document.getElementById('btn1');
+let loading = document.querySelector('.loading-screen');
 let title = document.getElementById('title');
 let first = document.querySelector('.first');
 let second = document.querySelector('.second');
@@ -8,7 +9,11 @@ let logo = document.querySelector('.logo');
 window.addEventListener('load', () => {
     setTimeout(() => {
         title.innerText = 'Albin Idrizi'
+        loading.style.opacity = 0;
     }, 5100);
+    setTimeout(() => {
+        loading.style.display = 'none'
+    }, 5500);
     setTimeout(() => {
         first.style.opacity = 1;
     }, 500);
@@ -42,37 +47,3 @@ btn.addEventListener('click', () => {
         btn.style.opacity = 0;
     }, 400);
 })
-
-
-
-
-
-
-
-window.addEventListener('click touchstart', () => {
-    let loadingscreen = document.querySelector('.loading-screen');
-    if (loadingscreen.playing){
-
-    }
-    else {
-        loadingscreen.play()
-    }
-})
-
-
-// Object.defineProperty(HTMLMediaElement.prototype, 'playing', {
-//     get: function () {
-//         return !!(this.currentTime > 0 && !this.paused && !this.ended && this.readyState > 2);
-// }});
-
-// .on('click touchstart', function () {
-//     const videoElement = document.getElementById('home_video');
-//     if (videoElement.playing) {
-//         // video is already playing so do nothing
-//     }
-//     else {
-//         // video is not playing
-//         // so play video now
-//         videoElement.play();
-//     }
-// });
