@@ -1,5 +1,4 @@
 const btn = document.getElementById('btn1');
-let loading = document.querySelector('.loading-screen');
 let title = document.getElementById('title');
 let first = document.querySelector('.first');
 let second = document.querySelector('.second');
@@ -9,11 +8,7 @@ let logo = document.querySelector('.logo');
 window.addEventListener('load', () => {
     setTimeout(() => {
         title.innerText = 'Albin Idrizi'
-        loading.style.opacity = 0;
     }, 5100);
-    setTimeout(() => {
-        loading.style.display = 'none'
-    }, 5500);
     setTimeout(() => {
         first.style.opacity = 1;
     }, 500);
@@ -54,7 +49,7 @@ btn.addEventListener('click', () => {
 
 
 
-body.addEventListener('click touchstart', () => {
+window.addEventListener('click touchstart', () => {
     let loadingscreen = document.querySelector('.loading-screen');
     if (loadingscreen.playing){
 
