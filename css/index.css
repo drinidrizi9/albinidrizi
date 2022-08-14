@@ -20,19 +20,7 @@ html{
     user-select: none;
     -moz-user-select: none;
     overflow-x: hidden;
-} 
-
-::-webkit-scrollbar{
-    background-color: red   ;
-    width: 15px;
-    display: flex;
-    z-index: 9999;
 }
-
-::-webkit-scrollbar-thumb{
-    background-color: #383838;
-}
-
 
 .background-video{
     display: block;
@@ -40,8 +28,6 @@ html{
     width: 100vw;
     z-index: 1;
 }
-
-
 
 .background-video-desktop{
     display: flex;
