@@ -33,13 +33,15 @@ html{
     background-color: #383838;
 }
 
-/* 
+
 .background-video{
     display: block;
     position: fixed;
     width: 100vw;
     z-index: 1;
-} */
+}
+
+
 
 .background-video-desktop{
     display: flex;
