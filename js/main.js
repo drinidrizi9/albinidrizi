@@ -6,7 +6,7 @@ let second = document.querySelector('.second');
 let third = document.querySelector('.third');
 let logo = document.querySelector('.logo');
 
-window.addEventListener('load', () => {
+window.addEventListener('DOMContentLoaded', () => {
     setTimeout(() => {
         title.innerText = 'Albin Idrizi'
         loading.style.opacity = 0;

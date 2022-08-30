@@ -22,19 +22,20 @@ html{
     overflow-x: hidden;
 }
 
-.background-video{
+/* .background-video{
     display: block;
     position: fixed;
     width: 100vw;
     z-index: 1;
-}
+} */
 
 .background-video-desktop{
     display: flex;
     position: absolute;
-    transform: translateX(-10%);
+    transform: translateX(-5%);
     z-index: 1;
     height: 100vh;
+
 }
 
 header{
