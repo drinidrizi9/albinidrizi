@@ -31,11 +31,11 @@ window.addEventListener('DOMContentLoaded', () => {
 })
 
 
+const gmailText = document.querySelector(".gmail");
 const modal = document.getElementById('modal')
 let modalHeaderText = document.getElementById('modal-header-text')
 
 btn.addEventListener('click', () => {
-
 
     first.style.transition = '0.5s';
     second.style.transition = '0.5s';
@@ -56,33 +56,39 @@ btn.addEventListener('click', () => {
     setTimeout(() => {
         modalHeaderText.style.opacity = 1;
         modalHeaderText.style.transform = 'translateX(0px)'
-    }, 1500);
-    
+        gmailText.style.opacity = 1;
+        gmailText.style.transform = 'translateX(0px)';
+    }, 1500);    
 
 })
 
 const close = document.getElementById('close');
 close.addEventListener('click', () => {
 
+    first.style.transition = '0.5s';
+    second.style.transition = '0.5s';
+    third.style.transition = '0.5s';
+
     modalHeaderText.style.opacity = 0;
-    modalHeaderText.style.transform = 'translateX(-50px)'
+    modalHeaderText.style.transform = 'translateX(-50px)';
+    gmailText.style.transform = 'translateX(-50px)';
+    gmailText.style.opacity = 0;
     setTimeout(() => {
         modal.style.opacity = 0;
-    }, 500);
+    }, 200);
     setTimeout(() => {
         btn.style.opacity = 1;
-    }, 700);
+    }, 400);
     setTimeout(() => {
         third.style.opacity = 1;
-    }, 900);
+    }, 600);
     setTimeout(() => {
         second.style.opacity = 1;
-    }, 1200);
+    }, 1000);
     setTimeout(() => {
         first.style.opacity = 1;
-    }, 1400);
+    }, 1500);
 })
-const gmailText = document.querySelector(".gmail");
 
 gmailText.addEventListener('click', async () => {
     const content = document.getElementById('gmail').textContent;

@@ -46,6 +46,13 @@
         <div class="gradient-bottom"></div>
 
         <div class="second-part">
+            
+            <div id="animation">
+
+                <h1 class="static-text">Hello I am <span class="auto-type"></span></h1>
+                <!-- <h1 class="typing"></h1> -->
+
+            </div>
 
             <p class="text1"><span class="first">GRAPHIC</span><br><span class="second">DESIGNER</span><br><span class="third">based in Prishtina</span></p>
 
@@ -78,6 +85,25 @@
     </div>
 
     <script src="./js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script> -->
+    <script>
+        
+        window.addEventListener('load', () => {
+
+            let typed = new Typed(".auto-type", {
+                strings: ['Albin Idrizi.', 'a Graphic Designer.', 'a Video Editor.'],
+                typeSpeed: 150,
+                backSpeed: 50,
+                loop: true,
+                smartBackspace: true,
+                startDelay: 0,
+                startDelay: 6000,
+                
+            })     
+
+        })
+        
+    </script>
 
 </body>
 </html>
