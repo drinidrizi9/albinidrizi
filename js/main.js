@@ -1,101 +1,49 @@
 const btn = document.getElementById('btn1');
 let loading = document.querySelector('.loading-screen');
 let title = document.getElementById('title');
-let first = document.querySelector('.first');
-let second = document.querySelector('.second');
-let third = document.querySelector('.third');
+let text1 = document.querySelector('.text1');
 let logo = document.querySelector('.logo');
+let staticText = document.querySelector('.static-text');
 
-window.addEventListener('DOMContentLoaded', () => {
-    setTimeout(() => {
-        title.innerText = 'Albin Idrizi'
-        loading.style.opacity = 0;
-    }, 5100);
-    setTimeout(() => {
-        loading.style.display = 'none'
-    }, 5500);
-    setTimeout(() => {
-        first.style.opacity = 1;
-    }, 500);
-    setTimeout(() => {
-        second.style.opacity = 1;
-    }, 600);
-    setTimeout(() => {
-        third.style.opacity = 1
-    }, 700);
-    setTimeout(() => {
-        logo.style.transform = 'translateY(0px)'
-        btn.style.transform = 'translateY(0px)'
-        btn.style.opacity = 1
-    }, 700);
-})
+let func1 = () => {
+    title.innerText = 'Albin Idrizi'
+    loading.style.opacity = 0;
+}
+let func2 = () => {
+    loading.style.display = 'none'
+}
+let func3 = () => {
+    logo.style.transform = "translateY(0px)";
+    logo.style.opacity = 1;
+}
+let func4 = () => {
+    text1.style.transform = "translateX(0px)";
+    text1.style.opacity = 1;
+
+    staticText.style.transform = "translateX(0px)";
+    staticText.style.opacity = 1;
+
+    btn.style.transform = "translateX(0px)";
+    btn.style.opacity = 1;
+}
 
 
-const gmailText = document.querySelector(".gmail");
-const modal = document.getElementById('modal')
-let modalHeaderText = document.getElementById('modal-header-text')
+let interval1 = setInterval(() => {
+    func1();
+    clearInterval(interval1);
+}, 5100);
 
-btn.addEventListener('click', () => {
+let interval2 = setInterval(() => {
+    func2();
+    clearInterval(interval2);
+}, 5500);
 
-    first.style.transition = '0.5s';
-    second.style.transition = '0.5s';
-    third.style.transition = '0.5s';
-    first.style.opacity = 0;
-    setTimeout(() => {
-        second.style.opacity = 0;
-    }, 200);
-    setTimeout(() => {
-        third.style.opacity = 0;
-    }, 400);
-    setTimeout(() => {
-        btn.style.opacity = 0;
-    }, 400);
-    setTimeout(() => {
-        modal.style.opacity = 1;
-    }, 1000);
-    setTimeout(() => {
-        modalHeaderText.style.opacity = 1;
-        modalHeaderText.style.transform = 'translateX(0px)'
-        gmailText.style.opacity = 1;
-        gmailText.style.transform = 'translateX(0px)';
-    }, 1500);    
+let interval3 = setInterval(() => {
+    func3();
+    clearInterval(interval3);
+}, 5500);
 
-})
-
-const close = document.getElementById('close');
-close.addEventListener('click', () => {
-
-    first.style.transition = '0.5s';
-    second.style.transition = '0.5s';
-    third.style.transition = '0.5s';
-
-    modalHeaderText.style.opacity = 0;
-    modalHeaderText.style.transform = 'translateX(-50px)';
-    gmailText.style.transform = 'translateX(-50px)';
-    gmailText.style.opacity = 0;
-    setTimeout(() => {
-        modal.style.opacity = 0;
-    }, 200);
-    setTimeout(() => {
-        btn.style.opacity = 1;
-    }, 400);
-    setTimeout(() => {
-        third.style.opacity = 1;
-    }, 600);
-    setTimeout(() => {
-        second.style.opacity = 1;
-    }, 1000);
-    setTimeout(() => {
-        first.style.opacity = 1;
-    }, 1500);
-})
-
-gmailText.addEventListener('click', async () => {
-    const content = document.getElementById('gmail').textContent;
-    await navigator.clipboard.writeText(content)
-
-    gmailText.style.color = 'var(--primary-color)'
-    setTimeout(() => {
-        gmailText.style.color = '#fff'
-    }, 1000);
-})
+let interval4 = setInterval(() => {
+    func4();
+    clearInterval(interval4);
+}, 5200);
