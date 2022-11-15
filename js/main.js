@@ -3,7 +3,7 @@ let loading = document.querySelector('.loading-screen');
 let title = document.getElementById('title');
 let text1 = document.querySelector('.text1');
 let logo = document.querySelector('.logo');
-let staticText = document.querySelector('.static-text');
+// let staticText = document.querySelector('.static-text');
 
 let func1 = () => {
     title.innerText = 'Albin Idrizi'
@@ -20,8 +20,8 @@ let func4 = () => {
     text1.style.transform = "translateX(0px)";
     text1.style.opacity = 1;
 
-    staticText.style.transform = "translateX(0px)";
-    staticText.style.opacity = 1;
+    // staticText.style.transform = "translateX(0px)";
+    // staticText.style.opacity = 1;
 
     btn.style.transform = "translateX(0px)";
     btn.style.opacity = 1;

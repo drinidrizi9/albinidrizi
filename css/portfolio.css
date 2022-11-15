@@ -42,7 +42,7 @@ header{
     height: 105px;
     background-color: #1a1a1a;
     opacity: 85%;
-    border-bottom: rgba(255, 255, 255, 0.5) 1px solid;
+    /* border-bottom: rgba(255, 255, 255, 0.5) 1px solid; */
 }
 
 .header-container{
@@ -55,7 +55,7 @@ header{
 }
 
 .logo{
-    width: 52px;
+    width: 55px;
     display: flex;
     user-select: none;
     transform: translateY(-100px);
